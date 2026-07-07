@@ -1,0 +1,13 @@
+---
+title: "AuraVector-Go: Zero-Allocation Vector Database & Native RAG"
+institution: University of New South Wales
+startDate: February 2026
+endDate: Present
+---
+
+- Architected a zero-allocation vector search engine in Go, bypassing the Garbage Collector via native OS memory mapping (syscall.Mmap) to deliver sub-millisecond query latencies.
+- Devised SIMD-friendly math pipelines and Locality-Sensitive Hashing (LSH), accelerating Approximate Nearest Neighbor (ANN) search speeds by over 50x compared to linear scans.
+- Developed an enterprise-grade Hybrid Search architecture, processing 10,000+ metadata filters instantaneously to precisely pre-filter unstructured vector data.
+- Orchestrated a private Retrieval-Augmented Generation (RAG) pipeline, chunking and indexing 100% of uploaded documents for localized LLM ingestion.
+- Built a concurrent REST API utilizing sync.RWMutex, ensuring zero data loss across container restarts via custom flat-binary Write-Ahead Logging (WAL).
+- Integrated a Next.js frontend with a live telemetry dashboard, shrinking Docker image sizes by 60% through multi stage Compose architectures.

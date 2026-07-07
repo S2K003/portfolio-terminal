@@ -1,0 +1,13 @@
+---
+title: "Aura-Sentinel: AI-Driven Zero-Day Web Application Firewall"
+institution: University of New South Wales
+startDate: September 2024
+endDate: May 2025
+---
+
+- Spearheaded a highly concurrent, multi-node Web Application Firewall (WAF) in Go, utilizing non-blocking channels and goroutines to intercept and evaluate live HTTP traffic.
+- Structured a Semantic Transformer pipeline employing local LLMs (nomic-embed-text), instantly converting raw JSON server logs into 768-dimensional mathematical vectors to capture hacker intent without relying on static regex rules.
+- Established a dynamic Euclidean distance anomaly trap, clustering baseline traffic and isolating zero-day attacks.
+- Improved system latency by implementing an O(1) Adaptive Edge-Blocker (sync.Map), dropping cached malicious IPs in <0.001ms and bypassing heavy AI inference for repeat offenders.
+- Automated Security Operations Center (SOC) workflows by integrating a generative AI model to autonomously produce contextual Incident Response reports and fake honeypot payloads to drain attacker compute threads.
+- Engineered a Real-Time SOC Command Dashboard using Next.js, Tailwind CSS, and zero-dependency Server-Sent Events (SSE) in Go to stream live zero-day telemetry and AI reports to a persistent web interface.
